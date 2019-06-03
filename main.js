@@ -46,7 +46,7 @@ getiPadModel(){
 	// iPad Pro 10.5
 	} else if (window.screen.height / window.screen.width == 1112 / 834) {
 		return "iPad Pro 10.5";
-	// iPad Pro 12.9, Pro 12.9 (2nd Gen)
+	// iPad Pro 12.9, Pro 12.9 (2nd Gen), iPad Pro 12.9 (3rd Gen)
 	} else if (window.screen.height / window.screen.width == 1366 / 1024) {
 		switch(renderer) {
 			default:
@@ -55,6 +55,8 @@ getiPadModel(){
 				return "iPad Pro 12.9 (2nd Gen)";
 			case "Apple A9 GPU":
 				return "iPad Pro 12.9";
+			case "Apple A12X GPU":
+     			return "iPad Pro 12.9 (3rd Gen)";
 		}
 	} else {
 		return "";
